@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto con Javascript</title>
+
+    <!-- Estilos-->
+    <link rel="stylesheet" href="css/style.css">
+    <link id="theme" rel="stylesheet" type="text/css" href="css/green.css">
+
+    <!-- jQuery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+    
+    <link rel="stylesheet" href="js/jquery-ui-1.13.1/jquery-ui.min.css">
+    <link rel="stylesheet" href="js/jquery-ui-1.13.1/jquery-ui.structure.min.css">
+    <link rel="stylesheet" href="js/jquery-ui-1.13.1/jquery-ui.theme.min.css">
+    <script src="js/jquery-ui-1.13.1/jquery-ui.min.js"></script>
+
+    <!--plugin de validacion-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-form-validator/2.3.26/jquery.form-validator.min.js"></script>
+
+    <!--mis script-->
+    <script src="js/main.js"></script>
+</head>
+<body>
+    <div id="selector-theme">
+        <div id="to-green"></div>
+        <div id="to-red"></div>
+        <div id="to-blue"></div>
+    </div>
+    <section id="global">
+         <!-- Cabecera-->
+        <header>
+            <div id="logo">
+                <h1>Project JS</h1>
+            </div>
+            <div class="clearfix"></div>
+            <nav id="menu">
+                <ul id="menu">
+                    <li><a href="index.html">PRINCIPAL</a></li>
+                    <li><a href="reloj.html">WATCH</a></li>
+                    <li><a href="about.html">ABOUT ME</a></li>
+                    <li><a href="contacto.html">CONTACT</a></li>
+                </ul>
+            </nav>
+        </header>
+         
+
+     <!-- contenido-->
+     <section id="content">
+         <div id="box">
+             <!--formulario de contacto-->
+             <h2>Contac</h2>
+
+             <form action="" method="POST" id="form_contact">
+                 <label for="name">Name</label>
+                 <input type="text" name="name" data-validation="alphanumeric">
+
+                 <label for="surname">Last Name</label>
+                 <input type="text" name="surname" data-validation="alphanumeric">
+
+                 <label for="email">Email</label>
+                 <input type="text" name="email" data-validation="email">
+
+                 <label for="sex">Sex</label>
+                 <select name="sex" data-validation="required">
+                     <option value="men">Hombre</option>
+                     <option value="woman">Mujer</option>
+                 </select>
+
+                 <label for="date">date of birth</label>
+                 <input type="text" name="date" data-validation="date" data-validation-format="dd-mm-yyyy">
+
+                 <label for="years">Age</label>
+                 <input type="number" name="years" data-validation="number">
+
+                 <input type="submit" value="Enviar">
+             </form>
+
+             
+         </div>
+         <aside id="sidebar">
+            <div id="about">
+                <h4><span>who i am? </span></h4>
+                <img src="img/caracol.jpg" alt="">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                     Voluptatibus officiis aliquam voluptas eveniet ratione
+                      quod nesciunt provident.
+                     Corporis, vero totam.</p>
+            </div>
+
+            <div id="login">
+                <h4><span>Identify yourself</span></h4>
+                <form action="#">
+                    <label for="name">Name</label>
+                    <input type="text" name="name" id="form_name">
+
+                    <label for="email">Email</label>
+                    <input type="text" name="email">
+
+                    <label for="password">Password</label>
+                    <input type="password" name="password">
+
+                    <input type="submit" value="Entrar">
+                </form>
+            </div>
+        </aside>
+        <div class="clearfix"></div>
+    </section>
+   </section>
+   <footer>
+       BYU Javascript &copy;
+
+        <a href="" class="subir">Up</a>
+    </footer>
+</body>
+</html>
